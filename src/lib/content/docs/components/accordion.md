@@ -1,0 +1,20 @@
+---
+title: Accordion
+description: A vertically stacked set of interactive headings that each reveal a section of content.
+---
+
+<script>
+  import ComponentPreview from '$lib/components/component-preview.svelte';
+  import CodeBlock from '$lib/components/code-block.svelte';
+  import { registryAddCommandPrefix } from '$lib/constants';
+</script>
+
+<ComponentPreview name="accordion-demo" class="mb-4" />
+
+## Installation
+
+<CodeBlock source={`${registryAddCommandPrefix}accordion.json`} />
+
+## Usage
+
+<CodeBlock name="accordion-usage" />
