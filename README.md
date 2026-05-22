@@ -1,10 +1,10 @@
-# [shadcn-svelte-registry-template](https://shadcn-svelte-registry-template.vercel.app)
+# [material-svelte](https://material-svelte.flenze.com)
 
-A template for creating your own [shadcn-svelte](https://www.shadcn-svelte.com) compatible component registry.
+A collection of UI components for Svelte with the [Material Design 3 Expressive](https://m3.material.io) style, based on [shadcn-svelte](https://www.shadcn-svelte.com).
 
-The UI components are in `src/lib/registry/ui`, the docs for each component are in `src/lib/content/docs`, and the registry JSON file is `registry.json`.
+Not affiliated with Google or the official Material Design team.
 
-Read the [shadcn-svelte registry docs](https://www.shadcn-svelte.com/docs/registry) for more information on how to make your own registry.
+To use the components in your SvelteKit app, initialize shadcn-svelte, copy the `:root`, `.dark`, and `@theme inline` styles from `src/routes/layout.css` to your app's `layout.css`. Then, run the corresponding `npx shadcn-svelte add` commands from each component's docs page for the components you want to use.
 
 ## Adding a new component
 

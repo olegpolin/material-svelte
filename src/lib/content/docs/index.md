@@ -3,6 +3,6 @@ title: Introduction
 description: Re-usable components built with Bits UI and Tailwind CSS.
 ---
 
-You can use the `shadcn-svelte` CLI to run your own component registry. Running your own component registry allows you to distribute your custom components, hooks, pages, and other files to any Svelte project.
+A collection of UI components for Svelte with the <a href="https://m3.material.io" target="_blank" rel="noopener noreferrer">Material Design 3 Expressive</a> style, based on <a href="https://www.shadcn-svelte.com" target="_blank" rel="noopener noreferrer">shadcn-svelte</a>.
 
-This is a template for creating a custom registry using SvelteKit.
+Not affiliated with Google or the official Material Design team.
