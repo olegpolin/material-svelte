@@ -1,7 +1,7 @@
 {
   "$schema": "https://shadcn-svelte.com/schema/registry.json",
-  "name": "shadcn-svelte-registry-template",
-  "homepage": "https://shadcn-svelte-registry-template.vercel.app",
+  "name": "material-svelte",
+  "homepage": "https://material-svelte.flenze.com",
   "items": [
     {
       "name": "accordion",

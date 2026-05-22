@@ -8,6 +8,6 @@
 </script>
 
 <svelte:head>
-  <title>{title} - shadcn-svelte registry template</title>
+  <title>{title} - material-svelte</title>
   <meta name="description" content={description} />
 </svelte:head>

@@ -1,4 +1,4 @@
 export const registryAddCommandPrefix =
-  'npx shadcn-svelte@latest add https://shadcn-svelte-registry-template.vercel.app/r/';
+  'npx shadcn-svelte@latest add https://material-svelte.flenze.com/r/';
 
-export const githubRepoUrl = 'https://github.com/olegpolin/shadcn-svelte-registry-template';
+export const githubRepoUrl = 'https://github.com/olegpolin/material-svelte';
