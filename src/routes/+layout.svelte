@@ -19,7 +19,7 @@
   <meta property="og:image" content={`${page.url.origin}/logo.png`} />
 </svelte:head>
 
-<ModeWatcher defaultMode="dark" />
+<ModeWatcher defaultMode="light" />
 
 <Toaster richColors />
 
