@@ -17,7 +17,14 @@
 	bind:ref
 	data-slot="checkbox"
 	class={cn(
-		"border-input dark:bg-input/30 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground dark:data-[state=checked]:bg-primary data-[state=checked]:border-primary focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive peer flex size-4 shrink-0 items-center justify-center rounded-[4px] border shadow-xs transition-shadow outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50",
+		"peer relative flex size-[18px] shrink-0 items-center justify-center rounded-[2px] border-2 border-muted-foreground bg-transparent transition-colors outline-none",
+		"data-[state=checked]:bg-primary data-[state=checked]:border-primary data-[state=checked]:text-primary-foreground",
+		"data-[state=indeterminate]:bg-primary data-[state=indeterminate]:border-primary data-[state=indeterminate]:text-primary-foreground",
+		"hover:before:absolute hover:before:inset-[-10px] hover:before:rounded-full hover:before:bg-foreground/8",
+		"data-[state=checked]:hover:before:bg-primary/8",
+		"focus-visible:before:absolute focus-visible:before:inset-[-10px] focus-visible:before:rounded-full focus-visible:before:bg-foreground/12",
+		"aria-invalid:border-destructive",
+		"disabled:cursor-not-allowed disabled:opacity-40",
 		className
 	)}
 	bind:checked
@@ -25,11 +32,11 @@
 	{...restProps}
 >
 	{#snippet children({ checked, indeterminate })}
-		<div data-slot="checkbox-indicator" class="text-current transition-none">
+		<div data-slot="checkbox-indicator" class="relative text-current">
 			{#if checked}
-				<CheckIcon class="size-3.5" />
+				<CheckIcon class="size-3.5 stroke-[3]" />
 			{:else if indeterminate}
-				<MinusIcon class="size-3.5" />
+				<MinusIcon class="size-3.5 stroke-[3]" />
 			{/if}
 		</div>
 	{/snippet}

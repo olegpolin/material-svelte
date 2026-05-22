@@ -11,17 +11,13 @@
 	}: WithoutChildrenOrChild<SliderPrimitive.RootProps> = $props();
 </script>
 
-<!--
-Discriminated Unions + Destructing (required for bindable) do not
-get along, so we shut typescript up by casting `value` to `never`.
--->
 <SliderPrimitive.Root
 	bind:ref
 	bind:value={value as never}
 	data-slot="slider"
 	{orientation}
 	class={cn(
-		"data-vertical:min-h-40 relative flex w-full touch-none items-center select-none data-disabled:opacity-50 data-vertical:h-full data-vertical:w-auto data-vertical:flex-col",
+		"data-vertical:min-h-40 relative flex w-full touch-none items-center select-none data-disabled:opacity-40 data-vertical:h-full data-vertical:w-auto data-vertical:flex-col py-3",
 		className
 	)}
 	{...restProps}
@@ -31,7 +27,7 @@ get along, so we shut typescript up by casting `value` to `never`.
 			data-slot="slider-track"
 			data-orientation={orientation}
 			class={cn(
-				"bg-muted rounded-full data-horizontal:h-1 data-horizontal:w-full data-vertical:h-full data-vertical:w-1 bg-muted relative grow overflow-hidden data-horizontal:w-full data-vertical:h-full"
+				"bg-secondary rounded-full data-horizontal:h-4 data-horizontal:w-full data-vertical:h-full data-vertical:w-4 relative grow overflow-hidden data-horizontal:w-full data-vertical:h-full"
 			)}
 		>
 			<SliderPrimitive.Range
@@ -45,7 +41,7 @@ get along, so we shut typescript up by casting `value` to `never`.
 			<SliderPrimitive.Thumb
 				data-slot="slider-thumb"
 				index={thumb.index}
-				class="border-ring ring-ring/50 relative size-3 rounded-full border bg-white transition-[color,box-shadow] after:absolute after:-inset-2 hover:ring-3 focus-visible:ring-3 focus-visible:outline-hidden active:ring-3 block shrink-0 select-none disabled:pointer-events-none disabled:opacity-50"
+				class="bg-primary relative block h-11 w-1 shrink-0 rounded-full ring-2 ring-background select-none transition-transform after:absolute after:-inset-3 hover:scale-y-95 focus-visible:outline-hidden focus-visible:ring-primary active:scale-y-90 disabled:pointer-events-none disabled:opacity-40"
 				aria-label={`Thumb ${thumb.index + 1}`}
 			/>
 		{/each}

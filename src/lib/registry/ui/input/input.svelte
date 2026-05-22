@@ -18,6 +18,16 @@
 		"data-slot": dataSlot = "input",
 		...restProps
 	}: Props = $props();
+
+	const base = [
+		"flex h-14 w-full min-w-0 rounded-sm border border-input bg-transparent px-4 text-base text-foreground",
+		"placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground",
+		"transition-[color,border-color,box-shadow] outline-none",
+		"focus-visible:border-primary focus-visible:ring-[1px] focus-visible:ring-primary",
+		"hover:border-foreground/70",
+		"aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40",
+		"disabled:cursor-not-allowed disabled:opacity-40 disabled:border-input",
+	].join(" ");
 </script>
 
 {#if type === "file"}
@@ -25,9 +35,8 @@
 		bind:this={ref}
 		data-slot={dataSlot}
 		class={cn(
-			"selection:bg-primary dark:bg-input/30 selection:text-primary-foreground border-input ring-offset-background placeholder:text-muted-foreground flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 pt-1.5 text-sm font-medium shadow-xs transition-[color,box-shadow] outline-none disabled:cursor-not-allowed disabled:opacity-50",
-			"focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]",
-			"aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+			base,
+			"pt-4 text-sm font-medium file:me-3 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground",
 			className
 		)}
 		type="file"
@@ -39,12 +48,7 @@
 	<input
 		bind:this={ref}
 		data-slot={dataSlot}
-		class={cn(
-			"border-input bg-background selection:bg-primary dark:bg-input/30 selection:text-primary-foreground ring-offset-background placeholder:text-muted-foreground flex h-9 w-full min-w-0 rounded-md border px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
-			"focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]",
-			"aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
-			className
-		)}
+		class={cn(base, className)}
 		{type}
 		bind:value
 		{...restProps}
