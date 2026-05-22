@@ -26,12 +26,12 @@
   >
     <a
       class={badgeVariants({ variant: 'secondary', class: 'bg-transparent' })}
-      href="https://www.shadcn-svelte.com"
+      href="https://m3.material.io"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <span class="size-2 rounded-full bg-[#ff3e00]"></span>
-      Based on shadcn-svelte
+      <span class="size-2 rounded-full bg-primary"></span>
+      Based on Material Design 3 Expressive
       <ArrowRightIcon />
     </a>
     <h1
