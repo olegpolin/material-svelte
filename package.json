@@ -34,8 +34,8 @@
     "vite": "^8.0.10"
   },
   "dependencies": {
-    "@fontsource-variable/geist": "^5.2.8",
     "@fontsource-variable/geist-mono": "^5.2.7",
+    "@fontsource-variable/roboto": "^5.2.10",
     "mode-watcher": "^1.1.0",
     "shadcn-svelte": "^1.2.7"
   }
