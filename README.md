@@ -6,14 +6,6 @@ Not affiliated with Google or the official Material Design team.
 
 To use the components in your SvelteKit app, initialize shadcn-svelte, copy the `:root`, `.dark`, and `@theme inline` styles from `src/routes/layout.css` to your app's `layout.css`. Then, run the corresponding `npx shadcn-svelte add` commands from each component's docs page for the components you want to use.
 
-## Adding a new component
-
-To add a new component, create a new folder in `src/lib/registry/ui` with the name of your component. Inside that folder, create the necessary Svelte files for your component (e.g. `button.svelte`, `index.ts`, etc.).
-
-Add a docs file for your component in `src/lib/content/docs` with the same name as your component (e.g. `button.md`). Add component examples in `src/lib/registry/examples`.
-
-Finally, add an entry for your component in `registry.json` with the appropriate paths to your component files.
-
 ## Developing
 
 Once you've installed dependencies with `npm install`, start a development server:
