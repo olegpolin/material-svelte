@@ -1,7 +1,7 @@
 <script lang="ts">
   import './layout.css';
-  import { page } from '$app/state';
   import favicon from '$lib/assets/favicon.svg';
+  import { siteUrl } from '$lib/constants';
   import { navigating } from '$app/state';
   import { fade } from 'svelte/transition';
   import { ModeWatcher } from 'mode-watcher';
@@ -16,7 +16,7 @@
 
 <svelte:head>
   <link rel="icon" href={favicon} />
-  <meta property="og:image" content={`${page.url.origin}/logo.png`} />
+  <meta property="og:image" content={`${siteUrl}/showcase.png`} />
 </svelte:head>
 
 <ModeWatcher defaultMode="light" />
