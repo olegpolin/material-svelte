@@ -4,7 +4,7 @@
   import { siteUrl } from '#lib/constants.js';
   import { navigating } from '$app/state';
   import { fade } from 'svelte/transition';
-  import { ModeWatcher } from 'mode-watcher';
+  import { ModeWatcher, toggleMode } from 'mode-watcher';
   import { Toaster } from '#lib/registry/ui/sonner/index.js';
   import * as Tooltip from '#lib/registry/ui/tooltip/index.js';
   import Header from '#lib/components/header.svelte';
@@ -12,7 +12,27 @@
   import type { LayoutProps } from './$types';
 
   let { children, data }: LayoutProps = $props();
+
+  // Toggle light/dark mode with "d"
+  function handleKeydown(e: KeyboardEvent) {
+    if ((e.key !== 'd' && e.key !== 'D') || e.metaKey || e.ctrlKey || e.altKey || e.repeat) return;
+    if (
+      (e.target instanceof HTMLElement && e.target.isContentEditable) ||
+      e.target instanceof HTMLInputElement ||
+      e.target instanceof HTMLTextAreaElement ||
+      e.target instanceof HTMLSelectElement ||
+      // don't fight bits-ui menu typeahead (e.g. the theme dropdown itself)
+      (e.target instanceof Element && e.target.closest('[role="menu"]'))
+    ) {
+      return;
+    }
+
+    e.preventDefault();
+    toggleMode();
+  }
 </script>
+
+<svelte:window onkeydown={handleKeydown} />
 
 <svelte:head>
   <link rel="icon" href={favicon} />

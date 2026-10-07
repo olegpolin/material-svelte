@@ -126,7 +126,11 @@
     </Button>
     <Separator class="h-4" orientation="vertical" />
     <DropdownMenu.Root>
-      <DropdownMenu.Trigger class={buttonVariants({ variant: 'ghost', size: 'icon-sm' })}>
+      <DropdownMenu.Trigger
+        class={buttonVariants({ variant: 'ghost', size: 'icon-sm' })}
+        title="Toggle theme (D)"
+        aria-keyshortcuts="d"
+      >
         <ModeSwitcherIcon />
         <span class="sr-only">Toggle theme</span>
       </DropdownMenu.Trigger>
