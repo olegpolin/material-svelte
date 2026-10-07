@@ -8,7 +8,7 @@
     class: className
   }: { entries: TocEntry[]; slug: string; class?: string } = $props();
 
-  const hrefPrefix = $derived(resolve(slug === 'index' ? '/docs' : `/docs/${slug}`));
+  const hrefPrefix = $derived(resolve('/docs/[...slug]', { slug: slug === 'index' ? '' : slug }));
 </script>
 
 {#if entries.length}
