@@ -4,9 +4,9 @@ description: Displays a card with header, content, and footer.
 ---
 
 <script>
-  import ComponentPreview from '$lib/components/component-preview.svelte';
-  import CodeBlock from '$lib/components/code-block.svelte';
-  import { registryAddCommandPrefix } from '$lib/constants';
+  import ComponentPreview from '#lib/components/component-preview.svelte';
+  import CodeBlock from '#lib/components/code-block.svelte';
+  import { registryAddCommandPrefix } from '#lib/constants.js';
 </script>
 
 <ComponentPreview name="card-demo" class="mb-4" />

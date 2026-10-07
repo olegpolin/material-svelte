@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { ScrollArea } from "$lib/registry/ui/scroll-area/index.js";
+  import { ScrollArea } from "#lib/registry/ui/scroll-area/index.js";
 </script>
 
 <ScrollArea class="h-[200px] w-[350px] rounded-md border p-4">

@@ -2,7 +2,7 @@
   import type { Snippet } from 'svelte';
   import { onDestroy } from 'svelte';
   import { page } from '$app/state';
-  import { Button } from '$lib/registry/ui/button';
+  import { Button } from '#lib/registry/ui/button/index.js';
   import CopyIcon from '@lucide/svelte/icons/copy';
   import CheckIcon from '@lucide/svelte/icons/check';
 
@@ -23,7 +23,7 @@
   );
   let resolvedSource = $derived(source ?? (name ? registryExampleSources?.[name] : undefined));
   let displaySource = $derived(
-    resolvedSource?.replaceAll('$lib/registry/ui', '$lib/components/ui')
+    resolvedSource?.replaceAll('#lib/registry/ui', '$lib/components/ui')
   );
   let copySource = $derived(displaySource?.replace(/^\n+/, ''));
   let showCommandTopLine = $derived(

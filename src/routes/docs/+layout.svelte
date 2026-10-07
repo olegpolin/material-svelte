@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { LayoutProps } from './$types';
   import { page } from '$app/state';
-  import * as Sidebar from '$lib/registry/ui/sidebar';
+  import * as Sidebar from '#lib/registry/ui/sidebar/index.js';
 
   let { children, data }: LayoutProps = $props();
   let sidebarNavLinks = $derived(data.sidebarNavLinks);

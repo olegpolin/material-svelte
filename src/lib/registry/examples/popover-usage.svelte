@@ -1,5 +1,5 @@
 <script lang="ts">
-  import * as Popover from "$lib/registry/ui/popover/index.js";
+  import * as Popover from "#lib/registry/ui/popover/index.js";
 </script>
 
 <Popover.Root>

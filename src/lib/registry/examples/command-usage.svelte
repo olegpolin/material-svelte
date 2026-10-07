@@ -1,5 +1,5 @@
 <script lang="ts">
-  import * as Command from "$lib/registry/ui/command/index.js";
+  import * as Command from "#lib/registry/ui/command/index.js";
 </script>
 
 <Command.Root>

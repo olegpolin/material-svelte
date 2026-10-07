@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { Button } from '$lib/registry/ui/button';
-  import { badgeVariants } from '$lib/registry/ui/badge';
+  import { Button } from '#lib/registry/ui/button/index.js';
+  import { badgeVariants } from '#lib/registry/ui/badge/index.js';
   import ArrowRightIcon from '@lucide/svelte/icons/arrow-right';
 
   interface Props {

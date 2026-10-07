@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Seo from '$lib/components/seo.svelte';
-  import HeroSection from '$lib/components/hero-section.svelte';
+  import Seo from '#lib/components/seo.svelte';
+  import HeroSection from '#lib/components/hero-section.svelte';
 
   const title = 'Building Blocks for the Web';
   const description =

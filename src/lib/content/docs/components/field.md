@@ -4,9 +4,9 @@ description: Combine labels, controls, and help text to compose accessible form 
 ---
 
 <script>
-  import ComponentPreview from '$lib/components/component-preview.svelte';
-  import CodeBlock from '$lib/components/code-block.svelte';
-  import { registryAddCommandPrefix } from '$lib/constants';
+  import ComponentPreview from '#lib/components/component-preview.svelte';
+  import CodeBlock from '#lib/components/code-block.svelte';
+  import { registryAddCommandPrefix } from '#lib/constants.js';
 </script>
 
 <ComponentPreview name="field-demo" class="mb-4" />

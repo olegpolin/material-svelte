@@ -1,11 +1,11 @@
 <script lang="ts">
-  import * as Command from '$lib/registry/ui/command';
-  import * as Dialog from '$lib/registry/ui/dialog';
-  import { Button } from '$lib/registry/ui/button';
+  import * as Command from '#lib/registry/ui/command/index.js';
+  import * as Dialog from '#lib/registry/ui/dialog/index.js';
+  import { Button } from '#lib/registry/ui/button/index.js';
   import CornerDownLeftIcon from '@lucide/svelte/icons/corner-down-left';
   import { goto } from '$app/navigation';
   import { page } from '$app/state';
-  import type { ComponentLink } from '$lib/utils/navigation';
+  import type { ComponentLink } from '#lib/utils/navigation.js';
 
   let open = $state(false);
 

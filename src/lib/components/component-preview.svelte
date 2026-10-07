@@ -2,8 +2,8 @@
   import type { Component, Snippet } from 'svelte';
   import type { HTMLAttributes } from 'svelte/elements';
   import { page } from '$app/state';
-  import CodeBlock from '$lib/components/code-block.svelte';
-  import { cn } from '$lib/utils';
+  import CodeBlock from '#lib/components/code-block.svelte';
+  import { cn } from '#lib/utils.js';
 
   const exampleComponents = $derived(
     (page.data.exampleComponents ?? {}) as Record<string, Component>

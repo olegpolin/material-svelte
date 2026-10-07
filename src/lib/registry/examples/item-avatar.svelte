@@ -1,7 +1,7 @@
 <script lang="ts">
-  import * as Item from "$lib/registry/ui/item/index.js";
-  import * as Avatar from "$lib/registry/ui/avatar/index.js";
-  import { Button } from "$lib/registry/ui/button/index.js";
+  import * as Item from "#lib/registry/ui/item/index.js";
+  import * as Avatar from "#lib/registry/ui/avatar/index.js";
+  import { Button } from "#lib/registry/ui/button/index.js";
   import Plus from "@lucide/svelte/icons/plus";
 </script>
 

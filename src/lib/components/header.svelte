@@ -1,16 +1,16 @@
 <script lang="ts">
-  import * as NavigationMenu from '$lib/registry/ui/navigation-menu';
-  import * as DropdownMenu from '$lib/registry/ui/dropdown-menu';
-  import * as Popover from '$lib/registry/ui/popover';
-  import { Button, buttonVariants } from '$lib/registry/ui/button';
-  import { Separator } from '$lib/registry/ui/separator';
+  import * as NavigationMenu from '#lib/registry/ui/navigation-menu/index.js';
+  import * as DropdownMenu from '#lib/registry/ui/dropdown-menu/index.js';
+  import * as Popover from '#lib/registry/ui/popover/index.js';
+  import { Button, buttonVariants } from '#lib/registry/ui/button/index.js';
+  import { Separator } from '#lib/registry/ui/separator/index.js';
   import { userPrefersMode } from 'mode-watcher';
-  import { headerLinks, type SidebarNavGroup } from '$lib/utils/navigation';
-  import CommandMenu from '$lib/components/command-menu.svelte';
-  import { githubRepoUrl } from '$lib/constants';
-  import Logo from '$lib/assets/logo.svelte';
-  import GitHubIcon from '$lib/assets/icons/github-icon.svelte';
-  import ModeSwitcherIcon from '$lib/assets/icons/mode-switcher-icon.svelte';
+  import { headerLinks, type SidebarNavGroup } from '#lib/utils/navigation.js';
+  import CommandMenu from '#lib/components/command-menu.svelte';
+  import { githubRepoUrl } from '#lib/constants.js';
+  import Logo from '#lib/assets/logo.svelte';
+  import GitHubIcon from '#lib/assets/icons/github-icon.svelte';
+  import ModeSwitcherIcon from '#lib/assets/icons/mode-switcher-icon.svelte';
   import SunIcon from '@lucide/svelte/icons/sun';
   import MoonIcon from '@lucide/svelte/icons/moon';
   import MonitorIcon from '@lucide/svelte/icons/monitor';

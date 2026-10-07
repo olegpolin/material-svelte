@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { Button } from "$lib/registry/ui/button/index.js";
-  import { Checkbox } from "$lib/registry/ui/checkbox/index.js";
-  import * as Field from "$lib/registry/ui/field/index.js";
-  import { Input } from "$lib/registry/ui/input/index.js";
-  import * as Select from "$lib/registry/ui/select/index.js";
-  import { Textarea } from "$lib/registry/ui/textarea/index.js";
+  import { Button } from "#lib/registry/ui/button/index.js";
+  import { Checkbox } from "#lib/registry/ui/checkbox/index.js";
+  import * as Field from "#lib/registry/ui/field/index.js";
+  import { Input } from "#lib/registry/ui/input/index.js";
+  import * as Select from "#lib/registry/ui/select/index.js";
+  import { Textarea } from "#lib/registry/ui/textarea/index.js";
 
   let month = $state<string>();
   let year = $state<string>();

@@ -1,6 +1,6 @@
 <script lang="ts">
-  import * as Item from "$lib/registry/ui/item/index.js";
-  import { Button } from "$lib/registry/ui/button/index.js";
+  import * as Item from "#lib/registry/ui/item/index.js";
+  import { Button } from "#lib/registry/ui/button/index.js";
 </script>
 
 <div class="flex flex-col gap-6">

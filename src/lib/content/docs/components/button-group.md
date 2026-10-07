@@ -4,9 +4,9 @@ description: A container that groups related buttons together with consistent st
 ---
 
 <script>
-  import ComponentPreview from '$lib/components/component-preview.svelte';
-  import CodeBlock from '$lib/components/code-block.svelte';
-  import { registryAddCommandPrefix } from '$lib/constants';
+  import ComponentPreview from '#lib/components/component-preview.svelte';
+  import CodeBlock from '#lib/components/code-block.svelte';
+  import { registryAddCommandPrefix } from '#lib/constants.js';
 </script>
 
 <ComponentPreview name="button-group-demo" class="mb-4" />

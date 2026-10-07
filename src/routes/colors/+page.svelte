@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Seo from '$lib/components/seo.svelte';
-  import HeroSection from '$lib/components/hero-section.svelte';
+  import Seo from '#lib/components/seo.svelte';
+  import HeroSection from '#lib/components/hero-section.svelte';
 
   const title = 'Tailwind Colors in Every Format';
   const description =

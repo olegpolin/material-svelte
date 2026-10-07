@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import type { ComponentLink } from '$lib/utils/navigation';
+  import type { ComponentLink } from '#lib/utils/navigation.js';
 
   const componentLinks = $derived((page.data.componentLinks ?? []) as ComponentLink[]);
 </script>

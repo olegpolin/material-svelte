@@ -1,6 +1,6 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import type { TocEntry } from '$lib/utils/toc';
+  import type { TocEntry } from '#lib/utils/toc.js';
 
   let {
     entries,

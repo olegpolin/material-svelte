@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Badge } from "$lib/registry/ui/badge/index.js";
+  import { Badge } from "#lib/registry/ui/badge/index.js";
   import BadgeCheckIcon from "@lucide/svelte/icons/badge-check";
 </script>
 

@@ -1,7 +1,7 @@
 import type { EntryGenerator, PageServerLoad } from './$types';
 import { error } from '@sveltejs/kit';
-import { extractDocsAssets } from '$lib/utils/docs-content.server';
-import { generateToc } from '$lib/utils/toc';
+import { extractDocsAssets } from '#lib/utils/docs-content.server.js';
+import { generateToc } from '#lib/utils/toc.js';
 
 type DocModule = {
   metadata: { title: string; description: string };

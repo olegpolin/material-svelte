@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { Button } from "$lib/registry/ui/button/index.js";
-  import { Label } from "$lib/registry/ui/label/index.js";
-  import { Input } from "$lib/registry/ui/input/index.js";
-  import * as Card from "$lib/registry/ui/card/index.js";
+  import { Button } from "#lib/registry/ui/button/index.js";
+  import { Label } from "#lib/registry/ui/label/index.js";
+  import { Input } from "#lib/registry/ui/input/index.js";
+  import * as Card from "#lib/registry/ui/card/index.js";
 </script>
 
 <Card.Root class="-my-4 w-full max-w-sm">

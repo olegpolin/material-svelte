@@ -4,8 +4,8 @@ description: How to install dependencies and structure your app.
 ---
 
 <script>
-  import CodeBlock from '$lib/components/code-block.svelte';
-  import { registryAddCommandPrefix, githubRepoUrl } from '$lib/constants';
+  import CodeBlock from '#lib/components/code-block.svelte';
+  import { registryAddCommandPrefix, githubRepoUrl } from '#lib/constants.js';
 
   const themeCssUrl = githubRepoUrl + '/blob/main/src/routes/layout.css';
 </script>

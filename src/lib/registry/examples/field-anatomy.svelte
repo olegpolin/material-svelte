@@ -1,5 +1,5 @@
 <script lang="ts">
-  import * as Field from "$lib/registry/ui/field/index.js";
+  import * as Field from "#lib/registry/ui/field/index.js";
 </script>
 
 <Field.Field>

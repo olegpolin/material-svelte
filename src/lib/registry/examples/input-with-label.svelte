@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { Input } from "$lib/registry/ui/input/index.js";
-  import { Label } from "$lib/registry/ui/label/index.js";
+  import { Input } from "#lib/registry/ui/input/index.js";
+  import { Label } from "#lib/registry/ui/label/index.js";
 
   const id = $props.id();
 </script>

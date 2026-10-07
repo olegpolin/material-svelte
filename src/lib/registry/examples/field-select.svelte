@@ -1,6 +1,6 @@
 <script lang="ts">
-  import * as Field from "$lib/registry/ui/field/index.js";
-  import * as Select from "$lib/registry/ui/select/index.js";
+  import * as Field from "#lib/registry/ui/field/index.js";
+  import * as Select from "#lib/registry/ui/select/index.js";
 
   let department = $state<string>();
 

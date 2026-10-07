@@ -1,7 +1,7 @@
 <!-- +layout.svelte -->
 
 <script lang="ts">
-  import { Toaster } from "$lib/registry/ui/sonner/index.js";
+  import { Toaster } from "#lib/registry/ui/sonner/index.js";
   let { children } = $props();
 </script>
  

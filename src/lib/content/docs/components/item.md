@@ -4,9 +4,9 @@ description: A versatile component that you can use to display any content.
 ---
 
 <script>
-  import ComponentPreview from '$lib/components/component-preview.svelte';
-  import CodeBlock from '$lib/components/code-block.svelte';
-  import { registryAddCommandPrefix } from '$lib/constants';
+  import ComponentPreview from '#lib/components/component-preview.svelte';
+  import CodeBlock from '#lib/components/code-block.svelte';
+  import { registryAddCommandPrefix } from '#lib/constants.js';
 </script>
 
 The `Item` component is a straightforward flex container that can house nearly any type of content. Use it to display a title, description, and actions. Group it with the `ItemGroup` component to create a list of items.

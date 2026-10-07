@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { Label } from "$lib/registry/ui/label/index.js";
-  import * as RadioGroup from "$lib/registry/ui/radio-group/index.js";
+  import { Label } from "#lib/registry/ui/label/index.js";
+  import * as RadioGroup from "#lib/registry/ui/radio-group/index.js";
 </script>
 
 <RadioGroup.Root value="option-one">

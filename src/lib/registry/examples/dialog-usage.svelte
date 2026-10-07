@@ -1,5 +1,5 @@
 <script lang="ts">
-  import * as Dialog from "$lib/registry/ui/dialog/index.js";
+  import * as Dialog from "#lib/registry/ui/dialog/index.js";
 </script>
 
 <Dialog.Root>

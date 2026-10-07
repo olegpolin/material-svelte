@@ -4,9 +4,9 @@ description: A popup that displays information related to an element when the el
 ---
 
 <script>
-  import ComponentPreview from '$lib/components/component-preview.svelte';
-  import CodeBlock from '$lib/components/code-block.svelte';
-  import { registryAddCommandPrefix } from '$lib/constants';
+  import ComponentPreview from '#lib/components/component-preview.svelte';
+  import CodeBlock from '#lib/components/code-block.svelte';
+  import { registryAddCommandPrefix } from '#lib/constants.js';
 </script>
 
 <ComponentPreview name="tooltip-demo" class="mb-4" />

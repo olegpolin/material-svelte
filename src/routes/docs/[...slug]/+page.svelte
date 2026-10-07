@@ -2,12 +2,12 @@
   import type { PageProps } from './$types';
   import type { Attachment } from 'svelte/attachments';
   import { page } from '$app/state';
-  import Seo from '$lib/components/seo.svelte';
-  import { Badge } from '$lib/registry/ui/badge';
-  import { Button } from '$lib/registry/ui/button';
-  import DocsToc from '$lib/components/docs-toc.svelte';
-  import { findNeighbors } from '$lib/utils/navigation';
-  import { githubRepoUrl } from '$lib/constants';
+  import Seo from '#lib/components/seo.svelte';
+  import { Badge } from '#lib/registry/ui/badge/index.js';
+  import { Button } from '#lib/registry/ui/button/index.js';
+  import DocsToc from '#lib/components/docs-toc.svelte';
+  import { findNeighbors } from '#lib/utils/navigation.js';
+  import { githubRepoUrl } from '#lib/constants.js';
   import ArrowLeftIcon from '@lucide/svelte/icons/arrow-left';
   import ArrowRightIcon from '@lucide/svelte/icons/arrow-right';
   import ArrowUpRightIcon from '@lucide/svelte/icons/arrow-up-right';

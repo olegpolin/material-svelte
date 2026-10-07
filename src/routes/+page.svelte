@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Seo from '$lib/components/seo.svelte';
-  import HeroSection from '$lib/components/hero-section.svelte';
-  import RootComponents from '$lib/components/root-components.svelte';
+  import Seo from '#lib/components/seo.svelte';
+  import HeroSection from '#lib/components/hero-section.svelte';
+  import RootComponents from '#lib/components/root-components.svelte';
 
   const title = 'Material 3 Expressive Design System';
   const description =

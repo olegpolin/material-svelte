@@ -1,5 +1,5 @@
 <script lang="ts">
-  import * as Command from "$lib/registry/ui/command/index.js";
+  import * as Command from "#lib/registry/ui/command/index.js";
   import { onMount } from "svelte";
 
   let open = $state(false);

@@ -1,9 +1,9 @@
 <script lang="ts">
-  import * as Tabs from "$lib/registry/ui/tabs/index.js";
-  import * as Card from "$lib/registry/ui/card/index.js";
-  import { Button } from "$lib/registry/ui/button/index.js";
-  import { Input } from "$lib/registry/ui/input/index.js";
-  import { Label } from "$lib/registry/ui/label/index.js";
+  import * as Tabs from "#lib/registry/ui/tabs/index.js";
+  import * as Card from "#lib/registry/ui/card/index.js";
+  import { Button } from "#lib/registry/ui/button/index.js";
+  import { Input } from "#lib/registry/ui/input/index.js";
+  import { Label } from "#lib/registry/ui/label/index.js";
 </script>
 
 <div class="-mb-4 flex w-full max-w-sm flex-col gap-6">

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import * as Empty from '$lib/registry/ui/empty';
-  import { Button } from '$lib/registry/ui/button';
+  import * as Empty from '#lib/registry/ui/empty/index.js';
+  import { Button } from '#lib/registry/ui/button/index.js';
 </script>
 
 <Empty.Root>

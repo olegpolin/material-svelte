@@ -32,29 +32,29 @@
   import IconPlus from "@lucide/svelte/icons/plus";
 
   // --- UI Components ---
-  import { Button } from "$lib/registry/ui/button/index.js";
-  import * as ButtonGroup from "$lib/registry/ui/button-group/index.js";
-  import * as Field from "$lib/registry/ui/field/index.js";
-  import { Input } from "$lib/registry/ui/input/index.js";
-  import * as RadioGroup from "$lib/registry/ui/radio-group/index.js";
-  import { Switch } from "$lib/registry/ui/switch/index.js";
-  import { Checkbox } from "$lib/registry/ui/checkbox/index.js";
-  import { Card, CardContent } from "$lib/registry/ui/card/index.js";
-  import * as InputGroup from "$lib/registry/ui/input-group/index.js";
-  import { Label } from "$lib/registry/ui/label/index.js";
-  import * as Popover from "$lib/registry/ui/popover/index.js";
-  import * as Item from "$lib/registry/ui/item/index.js";
-  import * as Avatar from "$lib/registry/ui/avatar/index.js";
-  import { Badge } from "$lib/registry/ui/badge/index.js";
-  import * as Command from "$lib/registry/ui/command/index.js";
-  import * as DropdownMenu from "$lib/registry/ui/dropdown-menu/index.js";
-  import * as Tooltip from "$lib/registry/ui/tooltip/index.js";
-  import { Spinner } from "$lib/registry/ui/spinner/index.js";
-  import { Slider } from "$lib/registry/ui/slider/index.js";
-  import { Separator } from "$lib/registry/ui/separator/index.js";
-  import * as Select from "$lib/registry/ui/select/index.js";
-  import { Textarea } from "$lib/registry/ui/textarea/index.js";
-  import * as Empty from "$lib/registry/ui/empty/index.js";
+  import { Button } from "#lib/registry/ui/button/index.js";
+  import * as ButtonGroup from "#lib/registry/ui/button-group/index.js";
+  import * as Field from "#lib/registry/ui/field/index.js";
+  import { Input } from "#lib/registry/ui/input/index.js";
+  import * as RadioGroup from "#lib/registry/ui/radio-group/index.js";
+  import { Switch } from "#lib/registry/ui/switch/index.js";
+  import { Checkbox } from "#lib/registry/ui/checkbox/index.js";
+  import { Card, CardContent } from "#lib/registry/ui/card/index.js";
+  import * as InputGroup from "#lib/registry/ui/input-group/index.js";
+  import { Label } from "#lib/registry/ui/label/index.js";
+  import * as Popover from "#lib/registry/ui/popover/index.js";
+  import * as Item from "#lib/registry/ui/item/index.js";
+  import * as Avatar from "#lib/registry/ui/avatar/index.js";
+  import { Badge } from "#lib/registry/ui/badge/index.js";
+  import * as Command from "#lib/registry/ui/command/index.js";
+  import * as DropdownMenu from "#lib/registry/ui/dropdown-menu/index.js";
+  import * as Tooltip from "#lib/registry/ui/tooltip/index.js";
+  import { Spinner } from "#lib/registry/ui/spinner/index.js";
+  import { Slider } from "#lib/registry/ui/slider/index.js";
+  import { Separator } from "#lib/registry/ui/separator/index.js";
+  import * as Select from "#lib/registry/ui/select/index.js";
+  import { Textarea } from "#lib/registry/ui/textarea/index.js";
+  import * as Empty from "#lib/registry/ui/empty/index.js";
 
   // --- field-demo state ---
   let month = $state<string>();

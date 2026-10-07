@@ -1,5 +1,5 @@
 <script lang="ts">
-  import * as Item from "$lib/registry/ui/item/index.js";
+  import * as Item from "#lib/registry/ui/item/index.js";
   import ChevronRightIcon from "@lucide/svelte/icons/chevron-right";
   import ExternalLinkIcon from "@lucide/svelte/icons/external-link";
 </script>

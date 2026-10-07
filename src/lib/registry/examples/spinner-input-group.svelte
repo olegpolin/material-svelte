@@ -1,6 +1,6 @@
 <script lang="ts">
-  import * as InputGroup from "$lib/registry/ui/input-group/index.js";
-  import { Spinner } from "$lib/registry/ui/spinner/index.js";
+  import * as InputGroup from "#lib/registry/ui/input-group/index.js";
+  import { Spinner } from "#lib/registry/ui/spinner/index.js";
   import ArrowUpIcon from "@lucide/svelte/icons/arrow-up";
 </script>
 

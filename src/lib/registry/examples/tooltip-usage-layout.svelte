@@ -1,6 +1,6 @@
 <!-- src/routes/+layout.svelte -->
 <script lang="ts">
-  import * as Tooltip from "$lib/registry/ui/tooltip/index.js";
+  import * as Tooltip from "#lib/registry/ui/tooltip/index.js";
 
   let { children } = $props();
 </script>

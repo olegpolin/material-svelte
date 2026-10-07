@@ -7,9 +7,9 @@
   import Trash from "@lucide/svelte/icons/trash";
   import UserRoundX from "@lucide/svelte/icons/user-round-x";
   import VolumeOff from "@lucide/svelte/icons/volume-off";
-  import { Button } from "$lib/registry/ui/button/index.js";
-  import * as ButtonGroup from "$lib/registry/ui/button-group/index.js";
-  import * as DropdownMenu from "$lib/registry/ui/dropdown-menu/index.js";
+  import { Button } from "#lib/registry/ui/button/index.js";
+  import * as ButtonGroup from "#lib/registry/ui/button-group/index.js";
+  import * as DropdownMenu from "#lib/registry/ui/dropdown-menu/index.js";
 </script>
 
 <ButtonGroup.Root>
