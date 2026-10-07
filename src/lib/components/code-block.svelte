@@ -23,7 +23,7 @@
   );
   let resolvedSource = $derived(source ?? (name ? registryExampleSources?.[name] : undefined));
   let displaySource = $derived(
-    resolvedSource?.replaceAll('#lib/registry/ui', '$lib/components/ui')
+    resolvedSource?.replaceAll('#lib/registry/ui', '#lib/components/ui')
   );
   let copySource = $derived(displaySource?.replace(/^\n+/, ''));
   let showCommandTopLine = $derived(
