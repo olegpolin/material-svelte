@@ -2,6 +2,13 @@
   "$schema": "https://shadcn-svelte.com/schema/registry.json",
   "name": "material-svelte",
   "homepage": "https://material-svelte.flenze.com",
+  "aliases": {
+    "lib": "#lib/registry/lib",
+    "ui": "#lib/registry/ui",
+    "components": "#lib/registry/components",
+    "utils": "#lib/utils",
+    "hooks": "#lib/registry/hooks"
+  },
   "items": [
     {
       "name": "accordion",
